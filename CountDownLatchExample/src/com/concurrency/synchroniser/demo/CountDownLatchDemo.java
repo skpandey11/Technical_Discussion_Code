@@ -7,8 +7,10 @@ import java.util.concurrent.Executors;
 import com.concurrency.synchroniser.Boss;
 import com.concurrency.synchroniser.Worker;
 
-
-
+/**
+ * @author Sunil
+ *
+ */
 public class CountDownLatchDemo {
 
 	public CountDownLatchDemo() {
@@ -27,7 +29,7 @@ public class CountDownLatchDemo {
 		Worker w2 = new Worker(latch, "Worker2");
 		Worker w3 = new Worker(latch, "Worker3");
 		Boss boss = new Boss(latch);
-		 System.out.println("The boss is waiting for all the workers finished work ...... ");  
+		 System.out.println("The boss is waiting for all the workers to finished the assigned work ...... ");  
 		executor.execute(w3);
 		executor.execute(w2);
 		executor.execute(w1);

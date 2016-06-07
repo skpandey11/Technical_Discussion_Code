@@ -2,6 +2,10 @@ package com.concurrency.synchroniser;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * @author Sunil
+ *
+ */
 public class Boss implements Runnable{
 
 	private CountDownLatch downLatch;  
@@ -16,6 +20,6 @@ public class Boss implements Runnable{
             this.downLatch.await();  
         } catch (InterruptedException e) {  
         }  
-        System.out.println("workers live are finished, the boss began to check out! ");  
+        System.out.println("workers are finished the assigned work, the boss began to check out! ");  
     }  
 }
