@@ -20,7 +20,7 @@ public class JavaCyclicBarrierExample {
 		Thread serviceTwoThread = new Thread(new ServiceTwo(barrier));
 		
 		System.out.println("Starting both the services at"+new Date());
-		
+		barrier.reset();
 		serviceOneThread.start();
 		serviceTwoThread.start();
 		

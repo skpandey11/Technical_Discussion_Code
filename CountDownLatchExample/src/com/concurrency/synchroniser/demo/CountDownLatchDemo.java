@@ -33,6 +33,7 @@ public class CountDownLatchDemo {
 		executor.execute(w3);
 		executor.execute(w2);
 		executor.execute(w1);
+		
 		executor.execute(boss);
 
 		executor.shutdown();

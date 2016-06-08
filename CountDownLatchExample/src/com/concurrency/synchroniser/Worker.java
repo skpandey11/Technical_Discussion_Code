@@ -21,7 +21,8 @@ public class Worker implements Runnable {
     public void run() {  
         this.doWork();  
         try{  
-            TimeUnit.SECONDS.sleep(new Random().nextInt(10));  
+            //TimeUnit.SECONDS.sleep(new Random().nextInt(10));  
+            Thread.sleep(3000);
         }catch(InterruptedException ie){  
         }  
         System.out.println(this.name + "  finished the job");  

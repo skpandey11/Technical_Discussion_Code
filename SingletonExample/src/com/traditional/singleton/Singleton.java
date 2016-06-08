@@ -15,13 +15,13 @@ public class Singleton {
 	}
 	
 	// Providing Global point of access
-	public static Singleton getSingletonInstance() {
+	/*public static Singleton getSingletonInstance() {
         if (null == singletonInstance) {
             singletonInstance = new Singleton();
             System.out.println("Creating new instance");
         }
         return singletonInstance;
-    }
+    }*/
 	
 	 /**
 	  * By using this synchronized keyword we prevent Thread2 or Thread3 to access the singleton instance 
@@ -42,7 +42,7 @@ public class Singleton {
 	 *  we limit this expensive operation to happen only once
 	 * @return singletonInstance
 	 */
-	/*public static  Singleton getSingletonInstance() {
+	public static  Singleton getSingletonInstance() {
 		if (null == singletonInstance) {
 			synchronized (Singleton.class){
 				if (null == singletonInstance) {
@@ -52,14 +52,14 @@ public class Singleton {
 			}
 		}
 		return singletonInstance;
-	}*/
+	}
 
 
 	/**
 	 * This is for early loading mechanism
 	 * @return singletonInstance
 	 */
-	/* public static Singleton getSingletonInstance() {
+	/*public static Singleton getSingletonInstance() {
        return singletonInstance;
     }*/
 
