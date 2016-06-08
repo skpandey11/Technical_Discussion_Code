@@ -9,6 +9,6 @@ public class Main {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("External services validation completed !! Result was :: "+ result);
+		System.out.println("External services validation completed !! Result was ::: "+ result);
 	}
 }
